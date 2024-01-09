@@ -11,7 +11,8 @@ public class Ejercicio3 {
 		// Creo el array con longitud 10
 		double tabla[] = new double[10];
 		// Variable para el contador del segundo bucle
-		int cont = tabla.length;
+		double cont = tabla.length;
+		
 		// Bucle for en el que solicito un número y lo guardo en cada posición del array
 		for (int i = 0; i < tabla.length; i++) {
 			// Pido que introduzca un número
@@ -22,8 +23,9 @@ public class Ejercicio3 {
 			tabla[i] = numero;
 		}
 
-		for(double i = tabla.length; i < 0; i--) {
-			
+		for(int i = tabla.length; i > 0; i--) {
+			//Muestro el valor
+			System.out.println("El valor de la posición " + i + " de la tabla es: " + tabla[i]);
 		}
 		
 		sc.close();
