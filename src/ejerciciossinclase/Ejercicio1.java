@@ -1,4 +1,4 @@
-package ejercicio1;
+package ejerciciossinclase;
 
 import java.util.Arrays;
 import java.util.Random;

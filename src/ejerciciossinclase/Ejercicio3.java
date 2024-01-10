@@ -1,4 +1,4 @@
-package ejercicio3;
+package ejerciciossinclase;
 
 import java.util.Scanner;
 
@@ -23,11 +23,13 @@ public class Ejercicio3 {
 			tabla[i] = numero;
 		}
 
-		for(int i = tabla.length; i > 0; i--) {
+		//Bucle for para mostrar la el valor de la posición de cada casilla de la tabla en orden inverso
+		for(int i = tabla.length - 1; i >= 0 ; i--) {
 			//Muestro el valor
 			System.out.println("El valor de la posición " + i + " de la tabla es: " + tabla[i]);
 		}
 		
+		//Cierro el Scanner
 		sc.close();
 	}
 }
