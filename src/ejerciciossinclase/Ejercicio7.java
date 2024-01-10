@@ -18,18 +18,18 @@ public class Ejercicio7 {
 			
 			//Switch case para asignar a la variable mes el nombre mes correspondiente según el valor de i
 			switch (i) {
-			case 1 -> mes = "Enero";
-			case 2 -> mes = "Febrero";
-			case 3 -> mes = "Marzo";
-			case 4 -> mes = "Abril";
-			case 5 -> mes = "Mayo";
-			case 6 -> mes = "Junio";
-			case 7 -> mes = "Julio";
-			case 8 -> mes = "Agosto";
-			case 9 -> mes = "Septiembre";
-			case 10 -> mes = "Octubre";
-			case 11 -> mes = "Noviembre";
-			case 12 -> mes = "Diciembre";
+			case 0 -> mes = "Enero";
+			case 1 -> mes = "Febrero";
+			case 2 -> mes = "Marzo";
+			case 3 -> mes = "Abril";
+			case 4 -> mes = "Mayo";
+			case 5 -> mes = "Junio";
+			case 6 -> mes = "Julio";
+			case 7 -> mes = "Agosto";
+			case 8 -> mes = "Septiembre";
+			case 9 -> mes = "Octubre";
+			case 10 -> mes = "Noviembre";
+			case 11 -> mes = "Diciembre";
 			}
 			
 			// Pido que introduzca un número
@@ -44,32 +44,41 @@ public class Ejercicio7 {
 			
 			//Switch case para asignar a la variable mes el nombre mes correspondiente según el valor de i
 			switch (i) {
-			case 1 -> mes = "Enero";
-			case 2 -> mes = "Febrero";
-			case 3 -> mes = "Marzo";
-			case 4 -> mes = "Abril";
-			case 5 -> mes = "Mayo";
-			case 6 -> mes = "Junio";
-			case 7 -> mes = "Julio";
-			case 8 -> mes = "Agosto";
-			case 9 -> mes = "Septiembre";
-			case 10 -> mes = "Octubre";
-			case 11 -> mes = "Noviembre";
-			case 12 -> mes = "Diciembre";
+			case 0 -> mes = "Enero";
+			case 1 -> mes = "Febrero";
+			case 2 -> mes = "Marzo";
+			case 3 -> mes = "Abril";
+			case 4 -> mes = "Mayo";
+			case 5 -> mes = "Junio";
+			case 6 -> mes = "Julio";
+			case 7 -> mes = "Agosto";
+			case 8 -> mes = "Septiembre";
+			case 9 -> mes = "Octubre";
+			case 10 -> mes = "Noviembre";
+			case 11 -> mes = "Diciembre";
 			}
 			
 			System.out.print("La temperatura de " + mes + " + aproximadamente es: ");
 			for(int j = 0; j <= 100; j++) {
 				
+				if (j == tabla[i]) {
+					System.out.print("*");
+				}else {
+					System.out.print("-");
+				}
+				
 				if (j == 0) {
 					System.out.print("0");
 				}else if (j % 10 == 0) {
-					
+					System.out.print(j * 10);
+				}else {
+					System.out.print(" ");
 				}
+				
+				System.out.println();
 				
 			}
 			
-			System.out.println("");
 		}
 		
 		//Cierro el Scanner
