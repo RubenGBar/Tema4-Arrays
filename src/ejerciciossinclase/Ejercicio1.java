@@ -1,6 +1,5 @@
 package ejerciciossinclase;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Ejercicio1 {
@@ -11,6 +10,8 @@ public class Ejercicio1 {
 		int tabla[] = new int [10];
 		/*Creo el objeto random*/
 		Random rand = new Random();
+		//Variable que usaré como contador
+		int cont = 0;
 		
 		/*Bucle for para crear números aleatorios y asignarlos a cada posición de la tabla*/
 		for(int i = 0; i < tabla.length; i++) {
@@ -20,8 +21,13 @@ public class Ejercicio1 {
 			tabla[i] = aleatorio;
 		}
 		
-		//Para comprobar si lo he hecho bien
-		System.out.println(Arrays.toString(tabla));	
+		for(int numeros: tabla) {
+			//Muestro el valor
+			System.out.println("El valor de la posición " + cont + " de la tabla es: " + numeros);
+			//Incremento el contador para saber en que posición estoy
+			cont++;
+		}
+		
 	}
 
 }

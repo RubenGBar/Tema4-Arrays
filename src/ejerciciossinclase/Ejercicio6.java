@@ -2,14 +2,14 @@ package ejerciciossinclase;
 
 import java.util.Scanner;
 
-public class Ejercicio3 {
+public class Ejercicio6 {
 	public static void main(String[] args) {
 		// Creo el Scanner
 		Scanner sc = new Scanner(System.in);
 		// Variable para guardar el número que se escribe por teclado
 		int numero;
 		// Creo el array con longitud 10
-		int tabla[] = new int[10];
+		int tabla[] = new int[8];
 		
 		// Bucle for en el que solicito un número y lo guardo en cada posición del array
 		for (int i = 0; i < tabla.length; i++) {
@@ -20,14 +20,21 @@ public class Ejercicio3 {
 			// Asigno el valor introducido por el teclado en cada casilla del array
 			tabla[i] = numero;
 		}
-
-		//Bucle for para mostrar la el valor de la posición de cada casilla de la tabla en orden inverso
-		for(int i = tabla.length - 1; i >= 0 ; i--) {
-			//Muestro el valor
-			System.out.println("El valor de la posición " + i + " de la tabla es: " + tabla[i]);
+		
+		//Bucle para ostrar cada valor del array e indicar si es par o impar
+		for(int i = 0; i < tabla.length; i++) {
+			
+			//Si el resto del número al dividirlo entre dos es 0 muestro que el número es par
+			if(tabla[i] % 2 == 0) {
+				System.out.println(tabla[i] + " es par");
+			}else {
+			//En cualquier otro caso muestro que es impar
+				System.out.println(tabla[i] + " es impar");
+			}
 		}
 		
 		//Cierro el Scanner
 		sc.close();
 	}
+
 }
