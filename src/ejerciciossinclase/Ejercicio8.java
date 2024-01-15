@@ -15,7 +15,6 @@ public class Ejercicio8 {
 		//Bucle for para asignar números aleatorios a cada posición de la tabla
 		for(int i = 0; i < tablaAleatoria.length; i++ ) {
 			tablaAleatoria[i] = (int) (1 + Math.random()*10);
-			System.out.println(Arrays.toString(tablaAleatoria));
 		}
 		
 		//Pido el valor de número
