@@ -22,8 +22,15 @@ public class Ejercicio05 {
 		Arrays.sort(elo);
 		
 		// Bucle para mostrar la tabla de forma descendente
-		for(int i = 8; elo.length > i; i--) {
-			
+		for(int i = elo.length - 1; i >= 0; i--) {
+			// Estructura de condicionales para imprimir el Array bonito (como la clase Arrays)
+			if ( i == 7) {
+				System.out.print("[ " + elo[i] + ", ");
+			}else if ( i < 7 || i > 2) {
+				System.out.print(" " + elo[i] + ", ");
+			}else {
+				System.out.print(elo[i] + " ]");
+			}
 		}
 		
 		// Cierro el Scanner
