@@ -23,7 +23,7 @@ public class Ejercicio05 {
 		
 		// Bucle para mostrar la tabla de forma descendente
 		for(int i = elo.length - 1; i >= 0; i--) {
-			// Estructura de condicionales para imprimir el Array bonito (como la clase Arrays)
+			// Estructura de condicionales para imprimir el Array bonito (como la clase Arrays to String)
 			if ( i == 7) {
 				// En la primera iteración me imprime una llave con el número de esa posición más una coma
 				System.out.print("[ " + elo[i] + ", ");
