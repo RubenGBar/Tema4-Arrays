@@ -26,10 +26,10 @@ public class Ejercicio05 {
 			// Estructura de condicionales para imprimir el Array bonito (como la clase Arrays)
 			if ( i == 7) {
 				System.out.print("[ " + elo[i] + ", ");
-			}else if ( i < 7 || i > 2) {
-				System.out.print(" " + elo[i] + ", ");
-			}else {
+			}else if ( i == 0) {
 				System.out.print(elo[i] + " ]");
+			}else {
+				System.out.print(" " + elo[i] + ", ");
 			}
 		}
 		
