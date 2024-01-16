@@ -12,6 +12,8 @@ public class Ejercicio06 {
 		int num = 0;
 		// Variable para saber si el número introducido existe
 		boolean existe = false;
+		// Contador para saber cuantas veces aparece el número
+		int cont = 0;
 		
 		// Bucle for para rellenar el array con valores aleatorios
 		for(int i = 0; i < tabla.length; i++) {
@@ -37,12 +39,16 @@ public class Ejercicio06 {
 			System.out.println("El número " + num + " existe.");
 			// Si es verdad muestro en que posiciones se encuentra el valor introducido con un bucle for
 			for(int i = 0; i < tabla.length; i++) {
-				/* Muestro un mensaje por pantalla solo en el caso que el valor de la posición de la tabla 
+				/* Aumento el contador solo en el caso que el valor de la posición de la tabla 
 				 * y el número son iguales */
 				if (tabla[i] == num) {
-					System.out.println("Se encuentra en la posición: " + i);
+					cont++;
 				}
 			}
+			
+			// Indico cuantas veces aparece el número
+			System.out.println("El número " + num + " aparece " + cont + " veces");
+			
 		}else {
 			// Si el número no existe lo muestro por pantalla con un mensaje
 			System.out.println("El número " + num + " no existe :(");
