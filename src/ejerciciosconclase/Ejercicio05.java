@@ -26,10 +26,10 @@ public class Ejercicio05 {
 			// Estructura de condicionales para imprimir el Array bonito (como la clase Arrays to String)
 			if ( i == 7) {
 				// En la primera iteración me imprime una llave con el número de esa posición más una coma
-				System.out.print("[ " + elo[i] + ", ");
+				System.out.print("[" + elo[i] + ", ");
 			}else if ( i == 0) {
 				// En la última iteración me imprime el número de esa posición más una llave
-				System.out.print(elo[i] + " ]");
+				System.out.print(elo[i] + "]");
 			}else {
 				// En las demás iteraciones me imprime un espacio el número y una coma con un espacio
 				System.out.print(" " + elo[i] + ", ");
