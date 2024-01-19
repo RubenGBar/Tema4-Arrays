@@ -1,6 +1,5 @@
 package ejerciciosfunciones;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -44,7 +43,7 @@ public class Ejercicio04 {
 		sc.close();
 	}
 	
-	// Clase para buscar secuencialmente el número introducido por el usuario
+	// Función para buscar secuencialmente el número introducido por el usuario
 	public static int buscar(int[] tabla, int numBuscar) {
 		/* Variable que devuelvo como valor de la clase y que servirá como contador del bucle 
 		 * de la busqueda secuencial*/
