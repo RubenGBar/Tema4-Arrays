@@ -56,6 +56,8 @@ public class Ejercicio03 {
 			}
 		}
 		
+		// Ordeno la tabla
+		Arrays.sort(tablaDevuelta);
 		// Devuelvo tabalaDevuelta como valor de la clase
 		return tablaDevuelta;
 	}
