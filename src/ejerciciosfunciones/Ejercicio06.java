@@ -27,7 +27,7 @@ public class Ejercicio06 {
 	}
 
 	public static int[] suma(int[] tabla, int numElementos) {
-		int elementosSumados[] = new int[tabla.length - numElementos];
+		int elementosSumados[] = new int[tabla.length - numElementos + 1];
 		
 		for(int i = 0; i < elementosSumados.length; i++) {
 			for(int j = i; j < numElementos + i; j++) {
