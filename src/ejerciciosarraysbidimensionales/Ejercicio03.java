@@ -24,7 +24,7 @@ public class Ejercicio03 {
 		int tabla[][] = new int [ancho][largo];
 		
 		// Llamo a la función para rellenarla y después poder mostrarla
-		mostrarTabla(tabla);
+		rellenaTabla(tabla);
 		
 		// Muestro la tabla mediante dos bucles, con el primero controlo las filas
 		for(int i = 0; i < tabla.length; i++) {
@@ -49,10 +49,13 @@ public class Ejercicio03 {
 		sc.close();
 	}
 
-	// COMENTAR TO DO
-	public static void mostrarTabla(int[][] tabla) {
+	// Función para rellenar la tabla
+	public static void rellenaTabla(int[][] tabla) {
+		// Bucles para rellenar el Array, el primero controla las filas
 		for(int i = 0; i < tabla.length; i++) {
+			// Bucle para controlar las columnas
 			for(int j = 0; j < tabla[0].length; j++) {
+				// Relleno cada elemento del Array
 				tabla[i][j] = 10 * (i+j);
 			}
 		}

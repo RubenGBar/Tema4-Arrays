@@ -24,11 +24,11 @@ public class Ejercicio04 {
 	// Función para rellenar con las tablas de multiplicar
 	public static int[][] multiplicarTablas(int[][] tablaMultiplicar) {
 		// Array para devolver como valor de la función
-		int[][] tablasMulptiplicadas = new int[10][10];
+		int[][] tablasMulptiplicadas = new int[tablaMultiplicar.length][tablaMultiplicar[0].length];
 		// Bucles para calcular las tablas de multiplicar, con el primer bucle controlo las filas
 		for(int i = 0; i < tablasMulptiplicadas.length; i++) {
 			// Bucle para controlar las columnas
-			for(int j = 0; j < tablasMulptiplicadas.length; j++) {
+			for(int j = 0; j < tablasMulptiplicadas[0].length; j++) {
 				/* 
 				 * En cada elemento guardo el valor de multiplicar el contador de cada bucle más 1 cada uno 
 				 * y así obtener el valor de cada casilla de la tabla de multiplicar
@@ -36,7 +36,6 @@ public class Ejercicio04 {
 				tablasMulptiplicadas[i][j] = (i+1) * (j+1); 
 			}
 		}
-		
 		// Devuelvo tablasMulptiplicadas como valor de la función
 		return tablasMulptiplicadas;
 	}
