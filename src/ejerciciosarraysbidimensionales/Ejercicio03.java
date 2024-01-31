@@ -23,10 +23,27 @@ public class Ejercicio03 {
 		// Array bidimensional que recibirá la función mostrarTabla
 		int tabla[][] = new int [ancho][largo];
 		
-		//Llamo a la función para rellenarla y después poder mostrarla
+		// Llamo a la función para rellenarla y después poder mostrarla
 		mostrarTabla(tabla);
 		
-		//Muestro el tabla TO DO
+		// Muestro la tabla mediante dos bucles, con el primero controlo las filas
+		for(int i = 0; i < tabla.length; i++) {
+			// Controlo las columnas
+			for(int j = 0; j < tabla[0].length; j++) {
+				/* 
+				 * Si el elemento es menor que diez lo muestro con dos espacios para que 
+				 * los elementos queden alineados
+				 * */
+				if (tabla[i][j] < 10) {
+					System.out.print(tabla[i][j] + "  ");
+				} else {
+					// Muestro cada elemento por pantalla
+					System.out.print(tabla[i][j] + " ");
+				}
+			}
+			// Salto de línea para cuando se termine de imprimir cada fila
+			System.out.println();
+		}
 		
 		//Cierro el Scanner
 		sc.close();
