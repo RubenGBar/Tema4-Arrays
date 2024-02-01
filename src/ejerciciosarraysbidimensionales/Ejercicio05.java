@@ -7,9 +7,11 @@ public class Ejercicio05 {
 		// Array para guardar el valor devuelto por la función
 		int sumas[][] = new int[4][5];
 		
-		/*
-		 * FALTA MOSTRAR LA TABLA
-		 * */
+		// Llamo a la función sumas y guardo el valor devuelto en sumas
+		sumas = rellenar(sumas);
+		
+		// Bucles para mostrar el Array como una tabla, el primero es para controlar las filas
+		
 		
 	}
 	
