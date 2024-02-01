@@ -12,6 +12,9 @@ public class Ejercicio05 {
 		
 		// Bucles para mostrar el Array como una tabla, el primero es para controlar las filas
 		
+		/*
+		 * MOSTRAR COLUMNAS Y FILAS SUMADAS MÁS TOTAL
+		 * */
 		
 	}
 	
