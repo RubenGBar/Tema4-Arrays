@@ -11,9 +11,18 @@ public class Ejercicio05 {
 		sumas = rellenar(sumas);
 		
 		// Bucles para mostrar el Array como una tabla, el primero es para controlar las filas
+		for(int i = 0; i < sumas.length; i++) {
+			// Bucle para controlar las columnas
+			for(int j = 0; j < sumas[0].length; j++) {
+				// Muestro cada elemento
+				System.out.println(sumas[i][j] + "\t");
+			}
+			// Salto de línea cuando termino de imprimir una línea
+			System.out.println();
+		}
 		
 		/*
-		 * MOSTRAR COLUMNAS Y FILAS SUMADAS MÁS TOTAL
+		 * MOSTRAR COLUMNAS Y FILAS SUMADAS Y TOTAL
 		 * */
 		
 	}
