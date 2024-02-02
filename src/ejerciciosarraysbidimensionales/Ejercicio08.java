@@ -5,7 +5,7 @@ public class Ejercicio08 {
 		// Array que se comprobará si es simétrico
 		int tabla[][] = { {1, 2, 3, 4},
 						  {2, 2, 5, 6},
-						  {3, 6, 3, 7},
+						  {3, 5, 3, 7},
 						  {4, 6, 7, 4}};
 		// Variable para que cuando llame a la función saber si es simétrica o no
 		boolean simetrica = false;
