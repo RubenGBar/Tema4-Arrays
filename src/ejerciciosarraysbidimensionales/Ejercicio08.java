@@ -4,7 +4,7 @@ public class Ejercicio08 {
 	public static void main(String[] args) {
 		// Array que se comprobará si es simétrico
 		int tabla[][] = { {1, 2, 3, 4},
-						  {2, 2, 5, 6},
+						  {3, 2, 5, 6},
 						  {3, 5, 3, 7},
 						  {4, 6, 7, 4}};
 		// Variable para que cuando llame a la función saber si es simétrica o no
