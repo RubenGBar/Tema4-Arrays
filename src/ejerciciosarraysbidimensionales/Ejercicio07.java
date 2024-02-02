@@ -4,9 +4,9 @@ public class Ejercicio07 {
 	public static void main(String[] args) {
 		// Array al que se le hará la transposición
 		int tablaNormal[][] = {{1, 2, 3, 4},
-								{5, 6, 7, 8},
-								{9, 10, 11, 12},
-								{13, 14, 15, 16}};
+							   {5, 6, 7, 8},
+							   {9, 10, 11, 12},
+							   {13, 14, 15, 16}};
 		// Arraya para guardar la tabla tranpuesta
 		int tablaFinal[][] = new int[4][4];
 		// Llamo a la función transponedor para transponer la tabla y lo guardo en tabla Final
