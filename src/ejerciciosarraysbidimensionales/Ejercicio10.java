@@ -39,6 +39,7 @@ public class Ejercicio10 {
 
 	}
 	
+	// Función que devuelve una matriz girada 90 grados
 	public static int[][] gira90(int[][] matriz){
 		// Matriz para devolver como valor de la función
 		int matrizGirada[][] = new int[matriz[0].length][matriz.length];
@@ -47,7 +48,10 @@ public class Ejercicio10 {
 		for(int i = 0; i < matriz.length; i++) {
 			// Bucle para construir las columnas giradas
 			for(int j = 0; j < matriz[0].length; j++) {
-				// La posición de la matriz girada es la fila de la original y la longitud de la columna menos j
+				/* 
+				 * La posición de cada elemento de la matriz girada es la columna de la original y 
+				 * la longitud de la matriz original menos i  y menos 1
+				 * */
 				matrizGirada[j][matriz.length - 1 - i] = matriz[i][j];
 			}
 		}
