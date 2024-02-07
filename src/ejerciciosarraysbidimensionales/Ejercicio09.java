@@ -66,7 +66,7 @@ public class Ejercicio09 {
 			/*
 			 * Cuando la i es distinto de cero compruebo que la suma de las filas, la suma
 			 * de las columnas, la suma de la fila anterior y la suma de la columna anterior
-			 * son iguales para seguir iterando ell bucle sino termino de iterar
+			 * son iguales para seguir iterando el bucle 
 			 */
 			if (i != 0) {
 				if (sumaFilas == sumaColumnas && sumaFilas == sumaFilaAnterior && sumaFilas == sumaColumnaAnterior
